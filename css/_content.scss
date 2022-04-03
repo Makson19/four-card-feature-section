@@ -1,0 +1,78 @@
+@import 'base';
+@import 'header';
+
+.content {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+
+    .card {
+        background: #FFF;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.6rem;
+        padding: 2rem;
+        max-height: 16.66rem;
+        box-shadow: 0 5px 20px rgba(163, 165, 173, 0.6);
+
+        .bar {
+            height: 0.3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%
+        }
+
+        h2 {
+            font: 700 1.3rem $font;
+            color: $very-dark-blue;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font: 400 0.82rem $font;
+            color: $grayish-blue;
+            max-width: 20rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .image {
+            text-align: right;
+            // margin: 0 2rem 2rem 0;
+        }
+    }
+
+    .col-1 {
+        .card > .bar {
+            background: $cyan;
+        }
+    }
+
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        .card:first-child > .bar {
+            background: $red;
+        }
+
+        .card:last-child > .bar {
+            background: $orange;
+        }
+    }
+
+    .col-3 {
+        .card > .bar {
+            background: $blue;
+        }
+    }
+
+    
+}

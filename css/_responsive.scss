@@ -1,0 +1,30 @@
+@import 'base';
+@import 'header';
+@import 'content';
+
+
+@media (min-width: 500px) {
+    .header {
+        .title-1 {
+            font-size: 2.2rem;
+        }
+
+        .title-2 {
+            font-size: 2.25rem;
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .container {
+        margin: 3rem 1.7rem;
+
+        .content {
+            flex-direction: row;
+    
+            .card > p {
+                font-size: 1rem;
+            }
+        }
+    }   
+}

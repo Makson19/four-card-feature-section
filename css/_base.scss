@@ -1,0 +1,40 @@
+
+// Variables //
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+$colors: (color1: $cyan, color2: $red, color3: $orange, color4: $blue);
+
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+$font: 'Poppins', sans-serif;
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $very-light-gray;
+    font: 15px $font;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        max-width: 98rem;
+        margin: 4rem 1.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+}
+
